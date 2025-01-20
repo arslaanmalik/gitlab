@@ -44,6 +44,10 @@ sudo sed -i 's/^external_url 'https://www.gitlab.com';/external_url 'http"$exter
 echo "Reconfiguring GitLab to apply the new settings..."
 sudo gitlab-ctl reconfigure
 
+echo "You didn't opt-in to print initial root password "
+ sudo cat /etc/gitlab/initial_root_password
+
 # Section 9: Final message
 echo "Reconfiguration completed. GitLab is now set up with the new external URL."
 echo "Access your GitLab instance via the configured external URL."
+
