@@ -40,4 +40,4 @@ echo | openssl s_client -CAfile /etc/gitlab-runner/certs/gitlab.com.crt -connect
 ///////////////////////////////
 
 Now Join the Runner 
-gitlab-runner register  --url https://gitlab.com  --token Q2xjuunjsald --tls-ca-file=/etc/gitlab-runner/certs/.gitlab.com.crt
+gitlab-runner register  --url https://gitlab.com  --token xxxxxxxx --tls-ca-file=/etc/gitlab-runner/certs/.gitlab.com.crt
